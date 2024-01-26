@@ -1,0 +1,100 @@
+
+:root {
+    --base-color: #023047;
+    --primary-color: #219EBC;
+    --secondary-color: #8ECAE6;
+    --accent-color: #FB8500;
+    --action-color: #FFB703;
+}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    width: 100vw;
+    margin: 0rem;
+    background-color: var(--base-color);
+    position: relative;
+}
+nav {
+    position: fixed;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 2rem;
+    z-index: 1;
+    display: grid;
+}
+nav > a {
+    color: white;
+}
+section {
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+section > div.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section > header {
+    padding-top: 2rem;
+    margin-left: 10rem;
+}
+header > h1 {
+    font-size: 3rem;
+}
+header > h2 {
+    font-size: 2rem;
+}
+#welcome {
+    color: white;
+}
+#welcome h1 {
+    font-size: 4rem;
+}
+#welcome h2 {
+    font-size: 3rem;
+}
+#skills {
+    background-color: var(--secondary-color);
+}
+#portfolio {
+    background-color: var(--primary-color);
+}
+#portfolio > div {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3rem;
+}
+#process {
+    background-color: var(--secondary-color);
+}
+#process > div {
+    width: 60%;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
+}
+#process > div > div {
+    background-color: #fff;
+    text-align: center;
+    line-height: 7rem;
+}
+#connect {
+    background-color: var(--primary-color);
+}
+
+mark {
+    background-color: transparent;
+    color: var(--accent-color);
+}
