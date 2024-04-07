@@ -93,6 +93,9 @@ header > h2 {
 #connect {
     background-color: var(--primary-color);
 }
+connect a {
+    font-size: 3em;
+}
 
 mark {
     background-color: transparent;
