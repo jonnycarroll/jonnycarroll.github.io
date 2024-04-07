@@ -93,8 +93,8 @@ header > h2 {
 #connect {
     background-color: var(--primary-color);
 }
-connect a {
-    font-size: 3em;
+#connect a {
+    font-size: 6em;
 }
 
 mark {
