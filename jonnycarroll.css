@@ -1094,6 +1094,17 @@ mark {
   color: rgb(251 146 60 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:p-12 {
+    padding: 3rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:h-full {
     height: 100%;
