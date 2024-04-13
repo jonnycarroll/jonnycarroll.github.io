@@ -1,101 +1,177 @@
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="jonnycarroll.css" />
-        <title>Jonathan Carroll, software engineer. I build software; coach engineering teams; and help businesses grow.</title>
-        <script src="https://kit.fontawesome.com/9d2e3172d6.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <nav>
-            <a href="#welcome">Welcome</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#process">Process</a>
-            <a href="#connect">Connect</a>
-        </nav>
-        <main>
-            <section id="welcome">
-                <div class="center">
-                    <h1>Hi, I'm <mark>Jonny</mark>.</h1>
-                    <h2>I build software; coach engineering teams; and help businesses grow.</h2>
-                    <a id="hire-me" href="https://www.linkedin.com/in/jonny-carroll/" target="_blank">Connect with me</a>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="jonnycarroll.css" />
+    <title>Jonathan Carroll, full-stack staff engineer. I build software; coach engineering teams; and help businesses grow.</title>
+    <script src="https://kit.fontawesome.com/9d2e3172d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="font-mono bg-blue-950">
+    <nav class="fixed p-4 w-full md:w-auto md:h-full z-10">
+        <div class="size-full flex flex-col md:flex-row items-center">
+            <div class="flex md:flex-col gap-4">
+                <a class="block p-2 rounded-lg bg-white/75 hover:bg-white target:bg-white transition drop-shadow-lg" href="#welcome">Hello</a>
+                <a class="block p-2 rounded-lg bg-white/75 hover:bg-white target:bg-white transition drop-shadow-lg" href="#skills">Skills</a>
+                <a class="block p-2 rounded-lg bg-white/75 hover:bg-white target:bg-white transition drop-shadow-lg" href="#career">Career</a>
+                <a class="block p-2 rounded-lg bg-white/75 hover:bg-white target:bg-white transition drop-shadow-lg" href="#process">Process</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="welcome" class="bg-blue-950 text-white p-16 md:p-32 md:pl-48">
+            <div class="container mx-auto">
+                <h1 class="text-6xl md:text-7xl lg:text-8xl mb-8">Hi, I'm <mark class="bg-transparent text-orange-500">Jonny</mark>.</h1>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl mb-8">I build software; coach engineering teams; and help businesses grow.</h2>
+                <a class="text-6xl md:text-8xl text-blue-400 hover:text-orange-400 transition duration-200 drop-shadow-xl" href="https://www.linkedin.com/in/jonny-carroll/" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="text-6xl md:text-8xl text-blue-400 hover:text-orange-400 transition duration-200 drop-shadow-xl" href="https://github.com/jonnycarroll" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a class="text-6xl md:text-8xl text-blue-400 hover:text-orange-400 transition duration-200 drop-shadow-xl" href="https://twitter.com/jonnycarroll" target="_blank" title="Twitter / X">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+            </div>
+        </section>
+        <section id="skills" class="bg-sky-400 p-16 md:p-32 md:pl-48">
+            <header class="container mx-auto">
+                <h1 class="text-6xl mb-6">Skills</h1>
+            </header>
+            <div class="container mx-auto">
+                <h2 class="text-4xl mb-6">Experienced with a broad mix of tech</h2>
+                <p class="mb-4">My breadth of experience means I can quickly adapt to new technical landscapes.</p>
+                <ul class="mb-8">
+                    <li class="mb-2">
+                        <label class="rounded-md bg-blue-200 px-2 text-nowrap">Languages</label>
+                        JavaScript / C# / PHP / Java / Python / Go / VB / Ruby
+                    </li>
+                    <li class="mb-2">
+                        <label class="rounded-md bg-blue-200 px-2 text-nowrap">Frontend tech</label>
+                        React / Next.js / GraphQL / jQuery
+                        <label class="rounded-md bg-blue-200 px-2 text-nowrap">UI toolkits</label>
+                        Tailwind / Bootstrap / Material UI / Encore
+                        <label class="rounded-md bg-blue-200 px-2">CMS</label>
+                        WordPress / Contentful
+                    </li>
+                    <li class="mb-2">
+                        <label class="rounded-md bg-blue-200 px-2">Frameworks</label>
+                        Symfony / .Net Framework / Spring Framework
+                        <label class="rounded-md bg-blue-200 px-2">ORM</label>
+                        nHibernate / Entity Framework / PHP Data Objects
+                    </li>
+                    <li class="mb-2">
+                        <label class="rounded-md bg-blue-200 px-2">Data</label>
+                        MySQL / Oracle / PostgreSQL / SQLServer / XTDB / Elasticsearch / Neo4j / DataDog / Google Analytics
+                    </li>
+                    <li class="mb-2">
+                        <label class="rounded-md bg-blue-200 px-2">Cloud</label>
+                        GCP
+                        <label class="rounded-md bg-blue-200 px-2">Containers</label>
+                        Docker / Vagrant
+                        <label class="rounded-md bg-blue-200 px-2">Orchestration</label>
+                        Kubernetes
+                        <label class="rounded-md bg-blue-200 px-2">CI/CD</label>
+                        Git Workflow / Bash scripting
+                        <label class="rounded-md bg-blue-200 px-2 text-nowrap">VCS</label>
+                        Git / Subversion
+                    </li>
+                    <li class="mb-2">
+                        <label class="rounded-md bg-blue-200 px-2 text-nowrap">Projects</label>
+                        Jira / Jira Align / Asana / Wrike / Product Board / AuditBoard / BugHerd
+                    </li>
+                    <li>
+                        <label class="rounded-md bg-blue-200 px-2">Documentation</label>
+                        RFCs / Coda / Markdown / SharePoint / Confluence
+                    </li>
+                </ul>
+                <h2 class="text-4xl mb-6">Seasoned technology leader</h2>
+                <ul class="mb-6">
+                    <li>
+                        Tech stategies &bullet;
+                        Product partnering &bullet;
+                        Performance management &bullet;
+                        Coaching &amp; mentoring &bullet;
+                        Recruiting talent
+                    </li>
+                </ul>
+                <div class="flex flex-col md:flex-row md:gap-10">
+                    <p class="text-8xl">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </p>
+                    <blockquote class="text-6xl italic">
+                        I learned more from Jonny in two weeks, than months on the job.
+                        <cite class="block text-4xl mt-4">Engineering manager</cite>
+                    </blockquote>
                 </div>
-            </section>
-            <section id="skills">
-                <header>
-                    <h1>Skills</h1>
-                </header>
-                <div class="center">
-                    <div>
-                        <h2>Software engineer</h2>
-                        <ul>
-                            <li>PHP</li>
-                            <li>React / Next.js</li>
-                            <li>.Net</li>
-                            <li>MySQL / Oracle / PostgreSQL</li>
-                            <li>Docker / Kubernetes</li>
-                            <li>Git Workflow</li>
-                            <li>Java / Spring</li>
-                            <li>Go</li>
-                            <li>Python</li>
-                        </ul>
+            </div>
+        </section>
+        <section id="career" class="bg-sky-200 p-16 md:p-32 md:pl-48">
+            <header class="container mx-auto">
+                <h1 class="text-6xl mb-6">Career</h1>
+            </header>
+            <div class="container mx-auto grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
+                <div class="flex gap-4">
+                    <div class="basis-1/4" title="Contracting">
+                        <img src="https://avatars.githubusercontent.com/u/674042?s=400&u=1559a3d08c737f72fdc1f4330ac0b8adc6a731b0&v=4"
+                            alt="Jonathan Carroll profile photo" class="rounded-lg" />
                     </div>
-                    <div>
-                        <h2>Leader / Manager</h2>
-                        <ul>
-                            <li>Strategic-thinking</li>
-                            <li>Performance management</li>
-                            <li>Developing talent</li>
-                            <li>Jira / Jira Align</li>
-                            <li>Asana</li>
-                            <li>Product Board</li>
-                        </ul>
+                    <div class="basis-3/4">
+                        <h2 class="pb-2">Senior Staff Engineer</h2>
+                        <h2 class="pb-2">Freelance IT Consultant</h2>
+                        <h2 class="pb-2">Freelance Web Developer</h2>
+                        <h2 class="pb-2">Lead Full-stack Engineer</h2>
                     </div>
                 </div>
-            </section>
-            <section id="portfolio">
-                <header>
-                    <h1>Career highlights</h1>
-                </header>
-                <div class="center">
-                    <h2 class="spotify" title="Spotify"><div><i class="fa-brands fa-spotify"></i></div></h2>
-                    <h2 class="nwb" title=""NatWest Group><img src="assets/NWG_BIG.png" alt="NatWest logo" /></h2>
-                    <h2 class="consultant" title="Consultant">Consultant</h2>
+                <div class="flex gap-4">
+                    <div class="basis-1/4" title="Spotify">
+                        <img src="assets/spotify-2-logo-png-transparent.png" alt="Spotify logo" />
+                    </div>
+                    <div class="basis-3/4">
+                        <h2 class="pb-2">Senior Engineering Manager</h2>
+                        <h2 class="pb-2">Engineering Manager II</h2>
+                    </div>
                 </div>
-            </section>
-            <section id="process">
-                <header>
-                    <h1>How I work</h1>
-                </header>
-                <div class="center">
-                    <div>
+                <div class="flex gap-4">
+                    <div class="basis-1/4" title="NatWest Group">
+                        <img src="assets/NWG_BIG.png" alt="NatWest Group logo" />
+                    </div>
+                    <div class="basis-3/4">
+                        <h2 class="pb-2">Senior Engineering Manager</h2>
+                        <h2 class="pb-2">Engineering Manager</h2>
+                        <h2 class="pb-2">Senior Full-stack Engineer</h2>
+                        <h2 class="pb-2">Full-stack Engineer</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="process" class="bg-sky-400 p-16 md:p-32 md:pl-48">
+            <header class="container mx-auto">
+                <h1 class="text-6xl mb-6">How I work</h1>
+            </header>
+            <div class="container mx-auto">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-2xl bg-blue-200 p-4">
                         <h2>Define</h2>
                     </div>
-                    <div>
+                    <div class="rounded-2xl bg-blue-200 p-4">
                         <h2>Design</h2>
                     </div>
-                    <div>
+                    <div class="rounded-2xl bg-blue-200 p-4">
                         <h2>Deliver</h2>
                     </div>
-                    <div>
+                    <div class="rounded-2xl bg-blue-200 p-4">
                         <h2>Develop</h2>
                     </div>
                 </div>
-            </section>
-            <section id="connect">
-                <header>
-                    <h1>Connect with me</h1>
-                </header>
-                <div class="center">
-                    <a href="https://www.linkedin.com/in/jonny-carroll/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://twitter.com/jonnycarroll" target="_blank" title="Twitter / X"><i class="fa-brands fa-square-x-twitter"></i></a>
-                </div>
-            </section>
-        </main>
-        <footer>
+            </div>
+        </section>
+    </main>
+    <footer>
 
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>

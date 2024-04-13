@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+:root {
+    --base-color: #023047;
+    --primary-color: #219EBC;
+    --secondary-color: #8ECAE6;
+    --accent-color: #FB8500;
+    --action-color: #FFB703;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    width: 100vw;
+    margin: 0rem;
+    background-color: var(--base-color);
+    position: relative;
+}
+
+@media screen and (min-width: 801px) {
+    .nav-content button {
+        display: none;
+    }
+    .nav-items {
+        position: fixed;
+        top: 25%;
+        transform: translateY(-50%);
+        left: 2rem;
+        z-index: 1;
+        display: grid;
+        gap: 0.3em;
+    }
+    .nav-items > a {
+        border-radius: 0.5em;
+        color: var(--base-color);
+        background: rgb(255, 255, 255, 0.7);
+        padding: 0.5em;
+        text-decoration: none;
+        font-weight: 700;
+        transition: background-color 200ms;
+    }
+    .nav-items > a:hover {
+        background: rgb(255, 255, 255, 0.8);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: absolute;
+    }
+    .nav-content {
+        display: flex;
+        align-items: center;
+    }
+    .nav-items {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 0.3em;
+    }
+    .nav-items > a {
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+
+/*
+section {
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+section > div.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section > header {
+    padding-top: 2rem;
+    width: 50%;
+    margin: auto
+}
+header > h1 {
+    font-size: 3rem;
+}
+header > h2 {
+    font-size: 2rem;
+}
+#welcome {
+    color: white;
+}
+#welcome h1 {
+    font-size: 4rem;
+}
+#welcome h2 {
+    font-size: 3rem;
+}
+#skills {
+    background-color: var(--secondary-color);
+}
+#portfolio {
+    background-color: var(--primary-color);
+}
+#portfolio > div {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2rem;
+    align-items: center;
+}
+#portfolio .spotify {
+    text-align: center;
+}
+#portfolio .spotify i {
+    font-size: 6em;
+}
+#portfolio .nwb img {
+    width: 150px;
+}
+
+#process {
+    background-color: var(--secondary-color);
+}
+#process > div {
+    width: 50%;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
+}
+#process > div > div {
+    border-radius: 0.5em;
+    background-color: #fff;
+    text-align: center;
+    line-height: 7rem;
+}
+#connect {
+    background-color: var(--primary-color);
+}
+#connect > div {
+    display: flex;
+    gap: 2rem;
+}
+#connect a {
+    font-size: 10em;
+}
+
+mark {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+#hire-me {
+    display: inline-block;
+    color: white;
+    background-color: var(--accent-color);
+    border-radius: 0.5em;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 200ms;
+}
+#hire-me:hover {
+    background-color: var(--action-color);
+}
+
+*/

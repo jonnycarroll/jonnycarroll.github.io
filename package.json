@@ -1,0 +1,29 @@
+{
+  "name": "jonnycarroll.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio webite for Jonathan Carroll",
+  "main": "index.html",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnycarroll/jonnycarroll.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "engineer",
+    "coach",
+    "consultant"
+  ],
+  "author": "Jonathan Carroll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonnycarroll/jonnycarroll.github.io/issues"
+  },
+  "homepage": "https://github.com/jonnycarroll/jonnycarroll.github.io#readme"
+}
