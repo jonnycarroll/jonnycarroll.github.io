@@ -734,6 +734,10 @@ video {
   padding: 2rem;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1019,6 +1023,10 @@ mark {
 
   .md\:p-32 {
     padding: 8rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:pl-48 {
