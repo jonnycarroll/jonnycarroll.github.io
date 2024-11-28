@@ -1,6 +1,7 @@
 # Jekyll, Tailwind and GitHuib Pages Put together with the help of:
 # https://stevenwestmoreland.com/2021/01/using-tailwind-css-with-jekyll.html
 # https://medium.com/@mehdi.h/using-jekyll-with-tailwindcss-on-github-pages-50c3d8401230
+# https://medium.com/@mauddev/jekyll-tailwind-netlify-9496352b49ee
 
 source "https://rubygems.org"
 # Hello! This is where you manage which Jekyll version is used to run.
@@ -12,18 +13,18 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.4"
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-#gem "github-pages", "~> 232", group: :jekyll_plugins
-# all bundled with github-pages
-# https://pages.github.com/versions/
 # If you have any plugins, put them here!
-gem "jekyll-postcss"
 group :jekyll_plugins do
+  gem "jekyll-postcss-v2"
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-seo-tag", "~> 2.8.0"
   gem "jekyll-sitemap", "~> 1.4.0"
 end
+# If you want to use default GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+#gem "github-pages", "~> 232", group: :jekyll_plugins
+# all bundled with github-pages
+# https://pages.github.com/versions/
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

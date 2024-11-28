@@ -21,10 +21,9 @@ jobs:
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && \
-          JEKYLL_ENV=$JEKYLL_ENV NODE_ENV=$NODE_ENV jekyll build --future"
+          NODE_ENV=$NODE_ENV jekyll build --future --trace"
 
-      - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4.1.0
+      - uses: crazy-max/ghaction-github-pages@v4.1.0
         with:
           target_branch: main
           build_dir: _site/
