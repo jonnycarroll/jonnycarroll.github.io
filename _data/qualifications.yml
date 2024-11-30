@@ -1,0 +1,9 @@
+- name: BSc Computer Science (Hons)
+  provider:
+    name: University of Edinburgh
+  period: 2001 - 2005
+  modules:
+    - Algorithms & Data Structures
+    - Database Systems
+    - Computer Graphics
+    - Networks

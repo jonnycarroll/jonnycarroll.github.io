@@ -1,0 +1,47 @@
+- name: Prisma
+  logo-filename: prisma-io-logo.png
+  url: https://www.prisma.io/
+
+- name: Tailwind CSS
+  logo-filename: tailwindcss-logo.jpg
+  url: https://tailwindcss.com/
+
+- name: Turso
+  logo-filename: turso-tech-logo.png
+  url: https://turso.tech/
+
+- name: Next.js
+  logo-filename: nextjs-logo.png
+  url: https://nextjs.org/
+
+- name: React
+  logo-filename: react-logo.jpeg
+  url: https://react.dev/
+
+- name: tRPC
+  logo-filename: trpc-logo.png
+  url: https://trpc.io/
+
+- name: TypeScript
+  logo-filename: typescript-logo.png
+  url: https://www.typescriptlang.org/
+
+- name: Jekyll
+  logo-filename: jekyll-logo.png
+  url: https://jekyllrb.com/
+
+- name: Vercel
+  logo-filename: vercel-logo.jpeg
+  url: https://vercel.com/
+
+- name: GitHub Workflows and Actions
+  logo-filename: github-logo.png
+  url: https://github.com/features/actions
+
+- name: Docker
+  logo-filename: docker-logo.png
+  url: https://www.docker.com/
+
+- name: Ansible
+  logo-filename: ansible-logo.jpg
+  url: https://www.ansible.com/

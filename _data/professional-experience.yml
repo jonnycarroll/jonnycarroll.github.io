@@ -1,0 +1,67 @@
+- role: Senior Staff Engineer
+  company:
+    name: Lyles Sutherland
+    url: https://www.lyles-sutherland.co.uk
+  period: 2024 - present
+  description: text
+  technologies:
+    - PHP
+    - Sass
+    - Symfony
+    - Docker
+    - Ansible
+    - Bash
+    - GitHub Actions
+
+- role: Senior Engineering Manager
+  past-roles:
+    - Engineering Manager
+  company:
+    name: Spotify
+    url: https://spotify.com
+  period: 2021 - 2023
+  description: text
+  technologies:
+    - GCP
+    - Coda
+    - Contentful
+    - Data Studio
+    - Jira
+    - Jira Align
+
+- role: Senior Engineering Manager
+  past-roles:
+    - Engineering Manager
+  company:
+    name: NatWest
+    url: https://natwest.com
+  period: 2012 - 2020
+  description: text
+  technologies:
+    - Tableau
+    - Jira
+    - Pivotal Cloud
+
+- role: Senior Fullstack Engineer
+  past-roles:
+    - Fullstack Engineer II
+  company:
+    name: NatWest
+    url: https://natwest.com
+  period: 2007 - 2011
+  description: text
+  technologies:
+    - .Net
+    - jQuery
+    - Oracle
+
+- role: Freelance Web Developer
+  company:
+    name: Various
+  period: 2004 - 2007
+  description: text
+  technologies:
+    - PHP
+    - Java
+    - WordPress
+    - MySQL
