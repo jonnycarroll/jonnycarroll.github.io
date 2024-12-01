@@ -61,7 +61,7 @@
     <span class="sr-only" hidden="" id="carousel-content-label">Carousel</span>
     <div class="items-center inline-flex lg:px-2 space-x-2 mb-2">
       <button
-        class="flex items-center text-white/60 hover:text-white/80 transition-colors"
+        class="flex items-center text-white/60 hover:text-white/90 transition-colors"
         :class="{ 'opacity-50 ': atBeginning }"
         :aria-disabled="atBeginning"
         :tabindex="atEnd ? -1 : 0"
@@ -74,7 +74,7 @@
         ><span class="sr-only">Skip to previous slide page</span>
       </button>
       <button
-        class="flex items-center text-white/60 hover:text-white/80 transition-colors"
+        class="flex items-center text-white/60 hover:text-white/90 transition-colors"
         :class="{ 'opacity-50 ': atEnd }"
         :aria-disabled="atEnd"
         :tabindex="atEnd ? -1 : 0"
@@ -102,7 +102,11 @@
         <figure>
           <div class="max-w-2xl">
             <div class="flex flex-col gap-6">
-              <p class="text-2xl text-gray-900 text-balance">{{ t.quote }}</p>
+              <p
+                class="text-2xl text-gray-900 dark:text-slate-100 text-balance"
+              >
+                {{ t.quote }}
+              </p>
               <div class="block flex-shrink-0">
                 <div class="flex items-center">
                   <div>
@@ -113,10 +117,14 @@
                     />
                   </div>
                   <div class="ml-3">
-                    <p class="text-sm font-medium text-gray-700">
+                    <p
+                      class="text-sm font-medium text-slate-700 dark:text-slate-300"
+                    >
                       {{ t.person }}
                     </p>
-                    <p class="text-xs font-medium text-gray-500">
+                    <p
+                      class="text-xs font-medium text-slate-600 dark:text-slate-400"
+                    >
                       {{ t.role }}
                     </p>
                   </div>
