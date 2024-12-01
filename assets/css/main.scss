@@ -5,6 +5,18 @@
 @import "tailwindcss/components.css";
 @import "tailwindcss/utilities.css";
 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
 // body {
 // 	background: linear-gradient(-45deg, #ade2c4, #f295b9, #7dd0ee, #8cf0d8);
 // 	background-size: 400% 400%;
