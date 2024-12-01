@@ -8,10 +8,11 @@
     - PHP
     - Sass
     - Symfony
+    - Doctrine
     - Docker
+    - GitHub Actions
     - Ansible
     - Bash
-    - GitHub Actions
 
 - role: Senior Engineering Manager
   past-roles:

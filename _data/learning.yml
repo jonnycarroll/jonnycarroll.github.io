@@ -1,47 +1,69 @@
-- name: Prisma
-  logo-filename: prisma-io-logo.png
-  url: https://www.prisma.io/
-
 - name: Tailwind CSS
   logo-filename: tailwindcss-logo.jpg
   url: https://tailwindcss.com/
+  tag: frontend
 
-- name: Turso
-  logo-filename: turso-tech-logo.png
-  url: https://turso.tech/
-
-- name: Next.js
-  logo-filename: nextjs-logo.png
-  url: https://nextjs.org/
-
-- name: React
-  logo-filename: react-logo.jpeg
-  url: https://react.dev/
-
-- name: tRPC
-  logo-filename: trpc-logo.png
-  url: https://trpc.io/
-
-- name: TypeScript
-  logo-filename: typescript-logo.png
-  url: https://www.typescriptlang.org/
+- name: Alphine.js
+  logo-filename: alpinejs-logo.jpg
+  url: https://alpinejs.dev/
+  tag: frontend
 
 - name: Jekyll
   logo-filename: jekyll-logo.png
   url: https://jekyllrb.com/
+  tag: frameworks
+
+- name: Next.js
+  logo-filename: nextjs-logo.png
+  url: https://nextjs.org/
+  tag: frameworks
+
+- name: React
+  logo-filename: react-logo.jpeg
+  url: https://react.dev/
+  tag: frameworks
+
+- name: tRPC
+  logo-filename: trpc-logo.png
+  url: https://trpc.io/
+  tag: frameworks
+
+- name: TypeScript
+  logo-filename: typescript-logo.png
+  url: https://www.typescriptlang.org/
+  tag: languages
+
+- name: Prisma
+  logo-filename: prisma-io-logo.png
+  url: https://www.prisma.io/
+  tag: data
+
+- name: SQLite
+  logo-filename: sqlite-logo.png
+  url: https://www.sqlite.org/
+  tag: data
+
+- name: Turso
+  logo-filename: turso-tech-logo.png
+  url: https://turso.tech/
+  tag: data
 
 - name: Vercel
   logo-filename: vercel-logo.jpeg
   url: https://vercel.com/
+  tag: devops
 
 - name: GitHub Workflows and Actions
   logo-filename: github-logo.png
   url: https://github.com/features/actions
+  tag: devops
 
 - name: Docker
   logo-filename: docker-logo.png
   url: https://www.docker.com/
+  tag: devops
 
 - name: Ansible
   logo-filename: ansible-logo.jpg
   url: https://www.ansible.com/
+  tag: devops

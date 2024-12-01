@@ -10,10 +10,20 @@
     src="https://kit.fontawesome.com/9d2e3172d6.js"
     crossorigin="anonymous"
   ></script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+  ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
 </head>
-<body class="bg-slate-300 text-lg text-slate-800 antialiased">
+<body class="bg-slate-300 text-lg text-slate-800 antialiased font-display">
   <div class="lg:max-w-screen-lg lg:mx-auto">
-    <div class="px-12 lg:px-0 lg:flex">
+    <div class="px-8 lg:px-0 lg:flex">
       <header class="lg:sticky lg:top-0 lg:h-dvh lg:w-1/2 pt-16">
         <h1 class="text-6xl mb-4">
           Hi, I'm
@@ -22,8 +32,8 @@
             >Jonny</mark
           >.
         </h1>
-        <h2 class="text-3xl mb-8">Fullstack Staff Engineer</h2>
-        <div class="w-1/2 lg:w-2/3 mb-8 text-slate-800">
+        <h2 class="text-3xl mb-8">Senior Staff Engineer</h2>
+        <div class="w-1/2 xs:w-full lg:w-2/3 mb-8 text-slate-800">
           I <strong class="font-semibold text-slate-950">build</strong> web
           apps; relentlessly
           <strong class="font-semibold text-slate-950">automate</strong> toil;
@@ -32,16 +42,22 @@
           <strong class="font-semibold text-slate-950">grow</strong>.
         </div>
         <ul>
-          <li>About me</li>
-          <li>Learning focus</li>
-          <li>Professional experience</li>
-          <li>Projects</li>
-          <li>Qualifications</li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#learning-focus">Learning focus</a></li>
+          <li>
+            <a href="#professional-experience">Professional experience</a>
+          </li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#qualifications">Qualifications</a></li>
         </ul>
         <ul class="flex gap-6 lg:absolute lg:inset-x-0 lg:bottom-16">
           {% for social in site.data.social-links %}
-          <li>
-            <a href="{{ social.url }}" target="_blank" class="text-blue-700"
+          <li class="relative">
+            <a
+              title="{{ social.icon }} {{ social.note }}"
+              href="{{ social.url }}"
+              target="_blank"
+              class="text-blue-700 hover:text-blue-800"
               ><i class="fa-brands fa-{{ social.icon }} fa-2x"></i
             ></a>
           </li>
@@ -49,46 +65,120 @@
         </ul>
       </header>
       <main class="py-16 lg:w-1/2">
-        <section class="mb-24">
+        <section id="about-me" class="mb-24">
           <h2 class="lg:hidden">About me</h2>
           <p class="mb-3">
-            SIGNPOST Lorem ipsum odor amet, consectetuer adipiscing elit.
-            Natoque congue maecenas aliquam quam maximus eu vulputate fusce?
-            Adipiscing eget quis congue elementum mauris sociosqu.
+            I am a long-time technologist. At the age of eleven, I was building
+            PCs with my father. The web fascinated me as a teenager
+            <a
+              href="https://en.wikipedia.org/wiki/GeoCities"
+              target="_blank"
+              class="text-blue-700 hover:text-blue-800"
+              >#GenerationGeoCities</a
+            >. I have extensive experience in building software, coaching others
+            and leading software teams, particularly in finance and data.
           </p>
           <p class="mb-3">
-            CURRENT Lorem ipsum odor amet, consectetuer adipiscing elit. Integer
-            tellus quam massa tristique nullam conubia quis. Id porttitor est,
-            vestibulum mattis maecenas litora.
+            Currently I am contracting as a frontend and DevOps engineer for
+            <a
+              href="https://smeprofessional.co.uk/"
+              class="text-blue-700 hover:text-blue-800"
+              target="_blank"
+              >Scotland's leading property management CRM</a
+            >, in my home city of Edinburgh. So far, I have helped increase
+            sales by over 50% by renovating their primary customer-facing UI,
+            and improved development efficiency by implementing automated CI/CD
+            pipelines.
           </p>
           <p class="mb-3">
-            PAST Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque
-            congue maecenas aliquam quam maximus eu vulputate fusce? Adipiscing
-            eget quis congue elementum mauris sociosqu.
+            I have been Engineering Manager and Senior Engineering Manager at
+            both
+            <a
+              href="https://spotify.com"
+              class="text-blue-700 hover:text-blue-800"
+              target="_blank"
+              >Spotify</a
+            >
+            and
+            <a
+              href="https://natwest.com"
+              class="text-blue-700 hover:text-blue-800"
+              target="_blank"
+              >NatWest</a
+            >. I am grateful to have been privy to world-class leadership
+            training. I have loved helping my teams grow, both personally and
+            collectively.
           </p>
-          <p class="mb-3">
-            PERSONAL Lorem ipsum odor amet, consectetuer adipiscing elit.
-            Integer tellus quam massa tristique nullam conubia quis. Id
-            porttitor est, vestibulum mattis maecenas litora.
+          <p class="mb-3 font-semibold">
+            Taking voluntary redundancy in late 2023 afforded me a rare
+            opportunity to pivot my career. With a decade of effective
+            management under my belt, both my
+            <i class="fa-solid fa-brain"></i> and
+            <i class="fa-solid fa-heart"></i> said it is time to get back to
+            coding again.
           </p>
         </section>
-        <section class="mb-24">
+        <section id="learning-focus" class="mb-24">
           <h2 class="lg:hidden">Learning focus</h2>
-          <ul class="flex gap-4 flex-wrap">
-            {% for learning in site.data.learning %}
+          <ul class="flex gap-1 mb-4">
             <li>
+              <button
+                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
+              >
+                All
+              </button>
+            </li>
+            <li>
+              <button
+                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
+              >
+                Data
+              </button>
+            </li>
+            <li>
+              <button
+                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
+              >
+                DevOps
+              </button>
+            </li>
+            <li>
+              <button
+                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
+              >
+                Frontend
+              </button>
+            </li>
+            <li>
+              <button
+                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
+              >
+                Frameworks
+              </button>
+            </li>
+            <li>
+              <button
+                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
+              >
+                Languages
+              </button>
+            </li>
+          </ul>
+          <ul x-data="{ active-tag: 'all' }" class="flex gap-4 flex-wrap">
+            {% for learning in site.data.learning %}
+            <li data-tag="{{ learning.tag }}">
               <a
                 href="{{ learning.url }}"
                 target="_blank"
                 title="{{ learning.name }}"
                 style="background-image: url('/assets/tech-logos/{{ learning.logo-filename }}')"
-                class="block rounded-md border-black bg-origin-padding border-2 h-16 aspect-square bg-center bg-cover bg-white"
+                class="block rounded-md border-slate-400 hover:border-blue-700 bg-origin-padding border-2 h-16 aspect-square bg-center bg-cover bg-white"
               ></a>
             </li>
             {% endfor %}
           </ul>
         </section>
-        <section class="mb-24">
+        <section id="professional-experiences" class="mb-24">
           <h2 class="lg:hidden">Professional experience</h2>
           {% for job in site.data.professional-experience %}
           <div
@@ -98,7 +188,7 @@
             <div>
               <h3>{{ job.role }}, {{ job.company.name }}</h3>
               {% for past-role in job.past-roles %}
-              <h3>{{ past-role }}</h3>
+              <h3 class="text-slate-500">{{ past-role }}</h3>
               {% endfor %}
               <div class="mb-4 text-sm">{{ job.description }}</div>
               <ul class="flex gap-2 flex-wrap">
@@ -114,14 +204,22 @@
           </div>
           {% endfor %}
         </section>
-        <section class="mb-24">
+        <section id="projects" class="mb-24">
           <h2 class="lg:hidden">Projects</h2>
           <div class="flex gap-4">
-            <div class="rounded-md border-black border-2">Energy Balance</div>
-            <div class="rounded-md border-black border-2">Gymsha.re</div>
+            <div
+              class="rounded-md border-black border-2 aspect-square flex align-middle items-center p-2"
+            >
+              Energy Balance
+            </div>
+            <div
+              class="rounded-md border-black border-2 aspect-square flex align-middle items-center p-2"
+            >
+              Gymsha.re
+            </div>
           </div>
         </section>
-        <section class="mb-24">
+        <section id="qualifications" class="mb-24">
           <h2 class="lg:hidden">Qualifications</h2>
           {% for q in site.data.qualifications %}
           <div
@@ -143,30 +241,44 @@
           </div>
           {% endfor %}
         </section>
-        <section class="text-sm">
+        <section id="made-with-care" class="text-sm">
           Designed on-the-fly with
           <a
             href="https://code.visualstudio.com/"
             target="_blank"
-            class="text-blue-700"
+            class="text-blue-700 hover:text-blue-900"
             >Visual Studio Code</a
           >. Built with
-          <a href="https://jekyllrb.com/" target="_blank" class="text-blue-700"
+          <a
+            href="https://jekyllrb.com/"
+            target="_blank"
+            class="text-blue-700 hover:text-blue-900"
             >Jekyll</a
+          >,
+          <a
+            href="https://tailwindcss.com/"
+            target="_blank"
+            class="text-blue-700 hover:text-blue-900"
+            >Tailwind CSS</a
           >
-          and <a href="" target="_blank" class="text-blue-700">Tailwind CSS</a>.
-          Deployed to
+          and
+          <a
+            href="https://alpinejs.dev/"
+            class="text-blue-700 hover:text-blue-900"
+            target="_blank"
+            >Alpine.js</a
+          >. Deployed to
           <a
             href="https://pages.github.com/"
             target="_blank"
-            class="text-blue-700"
+            class="text-blue-700 hover:text-blue-900"
             >GitHub Pages</a
           >
-          with
+          via
           <a
             href="https://github.com/features/actions"
             target="_blank"
-            class="text-blue-700"
+            class="text-blue-700 hover:text-blue-900"
             >GitHub Actions</a
           >.
         </section>

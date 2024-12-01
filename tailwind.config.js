@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'display': ["Encode Sans"],
+    }
   },
   variants: {},
   plugins: [
