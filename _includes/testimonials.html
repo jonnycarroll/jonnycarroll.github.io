@@ -50,7 +50,7 @@
     }"
 >
   <div
-    class="flex flex-col w-full"
+    class="flex flex-col w-full items-end"
     aria-labelledby="carousel-label"
     role="region"
     tabindex="0"
@@ -59,7 +59,7 @@
   >
     <h2 class="sr-only" hidden="" id="carousel-label">Carousel</h2>
     <span class="sr-only" hidden="" id="carousel-content-label">Carousel</span>
-    <div class="items-center inline-flex lg:px-2 space-x-2 mb-2">
+    <div class="inline-flex items-center lg:px-2 space-x-2 mb-2">
       <button
         class="flex items-center text-white/60 hover:text-white/90 transition-colors"
         :class="{ 'opacity-50 ': atBeginning }"
@@ -95,7 +95,7 @@
     >
       {% for t in site.data.testimonials %}
       <li
-        class="items-center justify-center w-full flex flex-col shrink-0 snap-start h-full p-4 rounded-2xl lg:p-6 bg-white/30 dark:bg-black/30 shadow-sm"
+        class="items-center justify-center w-full flex flex-col shrink-0 snap-start h-full p-6 rounded-2xl bg-white/30 hover:bg-white/40 dark:bg-black/30 dark:hover:bg-black/40 shadow-sm transition-colors"
         role="option"
         x-bind="disableNextAndPreviousButtons"
       >
@@ -103,7 +103,7 @@
           <div class="max-w-2xl">
             <div class="flex flex-col gap-6">
               <p
-                class="text-2xl text-gray-900 dark:text-slate-100 text-balance"
+                class="text-2xl text-slate-900 hover:text-slate-950 dark:text-slate-100 dark:hover:text-slate-50 text-balance"
               >
                 {{ t.quote }}
               </p>
