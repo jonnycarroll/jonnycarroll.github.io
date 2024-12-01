@@ -1,18 +1,19 @@
 - role: Senior Staff Engineer
   company:
     name: Lyles Sutherland
-    url: https://www.lyles-sutherland.co.uk
+    url: https://www.smeprofessional.co.uk
   period: 2024 - present
+  period-label: 10 months
   description: text
   technologies:
     - PHP
     - Sass
-    - Symfony
-    - Doctrine
     - Docker
     - GitHub Actions
     - Ansible
     - Bash
+    - Symfony
+    - Doctrine
 
 - role: Senior Engineering Manager
   past-roles:
@@ -20,7 +21,8 @@
   company:
     name: Spotify
     url: https://spotify.com
-  period: 2021 - 2023
+  period: 2021 - 2024
+  period-label: 3 years
   description: text
   technologies:
     - GCP
@@ -37,11 +39,15 @@
     name: NatWest
     url: https://natwest.com
   period: 2012 - 2020
+  period-label: 8 years
   description: text
   technologies:
     - Tableau
     - Jira
     - Pivotal Cloud
+    - Coaching
+    - Agile
+    - Scrum
 
 - role: Senior Fullstack Engineer
   past-roles:
@@ -49,7 +55,8 @@
   company:
     name: NatWest
     url: https://natwest.com
-  period: 2007 - 2011
+  period: 2007 - 2012
+  period-label: 5 years
   description: text
   technologies:
     - .Net
@@ -59,10 +66,17 @@
 - role: Freelance Web Developer
   company:
     name: Various
-  period: 2004 - 2007
+    url: #
+  period: 2003 - 2007
+  period-label: 4 years
   description: text
   technologies:
     - PHP
-    - Java
+    - Smarty
     - WordPress
+    - Java
+    - J2EE
+    - JSF
     - MySQL
+    - Ruby
+    - Rails

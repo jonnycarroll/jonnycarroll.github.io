@@ -1,0 +1,23 @@
+<section id="qualifications" class="mb-24">
+  <h2 class="uppercase font-bold text-black dark:text-white mb-4 lg:hidden">
+    Qualifications
+  </h2>
+  {% for q in site.data.qualifications %}
+  <div
+    class="grid grid-cols-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md mb-4"
+  >
+    <div class="text-sm uppercase pt-1">{{ q.period }}</div>
+    <a href="{{ q.provider.url }}" target="_blank" class="col-span-3 block">
+      <h3>{{ q.name }}</h3>
+      <h3 class="mb-4">{{ q.provider.name }}</h3>
+      <ul class="flex gap-1 flex-wrap">
+        {% for module in q.modules %}
+        <li class="p-2 rounded-full bg-slate-500 text-xs text-slate-100">
+          {{ module }}
+        </li>
+        {% endfor %}
+      </ul>
+    </a>
+  </div>
+  {% endfor %}
+</section>

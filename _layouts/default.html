@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-GB" }}" class="scroll-smooth">
+<html lang="{{ site.lang | default: "en-GB" }}" class="scroll-smooth" x-data="{
+darkMode: localStorage.theme === 'dark' || ( !('theme' in localStorage) &&
+window.matchMedia('(prefers-color-scheme: dark)').matches) }"
+x-bind:class="darkMode ? 'dark' : '' ">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
@@ -21,10 +24,47 @@
     rel="stylesheet"
   />
 </head>
-<body class="bg-slate-300 text-lg text-slate-800 antialiased font-display">
+<body
+  class="relative bg-slate-300 dark:bg-slate-900 text-lg text-slate-800 dark:text-slate-300 antialiased font-display"
+>
+  <div
+    class="fixed top-2 right-2 p-1 inline-block gap-1 shadow-md rounded-md backdrop-blur-sm bg-white/30 dark:bg-black/30 text-sm"
+  >
+    <button
+      type="button"
+      title="Toggle light mode"
+      class="px-2 py-1 rounded-md hover:bg-slate-300 dark:hover:bg-slate-800"
+      @click="() => {
+        localStorage.theme = 'light';
+        darkMode = false;
+      }"
+    >
+      <i class="fa-solid fa-cloud-sun"></i></button
+    ><button
+      type="button"
+      title="Toggle dark mode"
+      class="px-2 py-1 rounded-md hover:bg-slate-300 dark:hover:bg-slate-800"
+      @click="() => {
+        localStorage.theme = 'dark';
+        darkMode = true;
+      }"
+    >
+      <i class="fa-solid fa-moon"></i></button
+    ><button
+      type="button"
+      title="Toggle dark mode system preference"
+      class="px-2 py-1 rounded-md hover:bg-slate-300 dark:hover:bg-slate-800"
+      @click="() => {
+        localStorage.removeItem('theme');
+        darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }"
+    >
+      <i class="fa-solid fa-gear"></i>
+    </button>
+  </div>
   <div class="lg:max-w-screen-lg lg:mx-auto">
-    <div class="px-8 lg:px-0 lg:flex">
-      <header class="lg:sticky lg:top-0 lg:h-dvh lg:w-1/2 pt-16">
+    <div class="px-6 lg:px-0 lg:flex">
+      <header class="pt-12 lg:sticky lg:top-0 lg:h-dvh lg:w-1/2 lg:pt-16">
         <h1 class="text-6xl mb-4">
           Hi, I'm
           <mark
@@ -33,15 +73,25 @@
           >.
         </h1>
         <h2 class="text-3xl mb-8">Senior Staff Engineer</h2>
-        <div class="w-1/2 xs:w-full lg:w-2/3 mb-8 text-slate-800">
-          I <strong class="font-semibold text-slate-950">build</strong> web
-          apps; relentlessly
-          <strong class="font-semibold text-slate-950">automate</strong> toil;
-          <strong class="font-semibold text-slate-950">coach</strong>
+        <div class="w-full lg:w-2/3 mb-8">
+          I
+          <strong class="font-semibold text-slate-950 dark:text-slate-50"
+            >build</strong
+          >
+          web apps; relentlessly
+          <strong class="font-semibold text-slate-950 dark:text-slate-50"
+            >automate</strong
+          >
+          toil;
+          <strong class="font-semibold text-slate-950 dark:text-slate-50"
+            >coach</strong
+          >
           engineering teams; and help businesses
-          <strong class="font-semibold text-slate-950">grow</strong>.
+          <strong class="font-semibold text-slate-950 dark:text-slate-50"
+            >grow</strong
+          >.
         </div>
-        <ul>
+        <ul class="hidden lg:block">
           <li><a href="#about-me">About me</a></li>
           <li><a href="#learning-focus">Learning focus</a></li>
           <li>
@@ -57,7 +107,7 @@
               title="{{ social.icon }} {{ social.note }}"
               href="{{ social.url }}"
               target="_blank"
-              class="text-blue-700 hover:text-blue-800"
+              class="text-blue-600 hover:text-blue-800 dark:hover:text-blue-400 transition-colors"
               ><i class="fa-brands fa-{{ social.icon }} fa-2x"></i
             ></a>
           </li>
@@ -65,223 +115,13 @@
         </ul>
       </header>
       <main class="py-16 lg:w-1/2">
-        <section id="about-me" class="mb-24">
-          <h2 class="lg:hidden">About me</h2>
-          <p class="mb-3">
-            I am a long-time technologist. At the age of eleven, I was building
-            PCs with my father. The web fascinated me as a teenager
-            <a
-              href="https://en.wikipedia.org/wiki/GeoCities"
-              target="_blank"
-              class="text-blue-700 hover:text-blue-800"
-              >#GenerationGeoCities</a
-            >. I have extensive experience in building software, coaching others
-            and leading software teams, particularly in finance and data.
-          </p>
-          <p class="mb-3">
-            Currently I am contracting as a frontend and DevOps engineer for
-            <a
-              href="https://smeprofessional.co.uk/"
-              class="text-blue-700 hover:text-blue-800"
-              target="_blank"
-              >Scotland's leading property management CRM</a
-            >, in my home city of Edinburgh. So far, I have helped increase
-            sales by over 50% by renovating their primary customer-facing UI,
-            and improved development efficiency by implementing automated CI/CD
-            pipelines.
-          </p>
-          <p class="mb-3">
-            I have been Engineering Manager and Senior Engineering Manager at
-            both
-            <a
-              href="https://spotify.com"
-              class="text-blue-700 hover:text-blue-800"
-              target="_blank"
-              >Spotify</a
-            >
-            and
-            <a
-              href="https://natwest.com"
-              class="text-blue-700 hover:text-blue-800"
-              target="_blank"
-              >NatWest</a
-            >. I am grateful to have been privy to world-class leadership
-            training. I have loved helping my teams grow, both personally and
-            collectively.
-          </p>
-          <p class="mb-3 font-semibold">
-            Taking voluntary redundancy in late 2023 afforded me a rare
-            opportunity to pivot my career. With a decade of effective
-            management under my belt, both my
-            <i class="fa-solid fa-brain"></i> and
-            <i class="fa-solid fa-heart"></i> said it is time to get back to
-            coding again.
-          </p>
-        </section>
-        <section id="learning-focus" class="mb-24">
-          <h2 class="lg:hidden">Learning focus</h2>
-          <ul class="flex gap-1 mb-4">
-            <li>
-              <button
-                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
-              >
-                All
-              </button>
-            </li>
-            <li>
-              <button
-                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
-              >
-                Data
-              </button>
-            </li>
-            <li>
-              <button
-                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
-              >
-                DevOps
-              </button>
-            </li>
-            <li>
-              <button
-                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
-              >
-                Frontend
-              </button>
-            </li>
-            <li>
-              <button
-                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
-              >
-                Frameworks
-              </button>
-            </li>
-            <li>
-              <button
-                class="py-1 px-2 border-2 rounded-md border-slate-400 hover:border-blue-700 text-xs"
-              >
-                Languages
-              </button>
-            </li>
-          </ul>
-          <ul x-data="{ active-tag: 'all' }" class="flex gap-4 flex-wrap">
-            {% for learning in site.data.learning %}
-            <li data-tag="{{ learning.tag }}">
-              <a
-                href="{{ learning.url }}"
-                target="_blank"
-                title="{{ learning.name }}"
-                style="background-image: url('/assets/tech-logos/{{ learning.logo-filename }}')"
-                class="block rounded-md border-slate-400 hover:border-blue-700 bg-origin-padding border-2 h-16 aspect-square bg-center bg-cover bg-white"
-              ></a>
-            </li>
-            {% endfor %}
-          </ul>
-        </section>
-        <section id="professional-experiences" class="mb-24">
-          <h2 class="lg:hidden">Professional experience</h2>
-          {% for job in site.data.professional-experience %}
-          <div
-            class="flex border-2 border-transparent hover:border-slate-400 hover:bg-slate-400 hover:shadow-sm p-2 rounded-md mb-4"
-          >
-            <div class="w-32 text-sm uppercase pt-1">{{ job.period }}</div>
-            <div>
-              <h3>{{ job.role }}, {{ job.company.name }}</h3>
-              {% for past-role in job.past-roles %}
-              <h3 class="text-slate-500">{{ past-role }}</h3>
-              {% endfor %}
-              <div class="mb-4 text-sm">{{ job.description }}</div>
-              <ul class="flex gap-2 flex-wrap">
-                {% for tech in job.technologies %}
-                <li
-                  class="rounded-full bg-slate-500 text-xs p-2 text-slate-100"
-                >
-                  {{ tech }}
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          {% endfor %}
-        </section>
-        <section id="projects" class="mb-24">
-          <h2 class="lg:hidden">Projects</h2>
-          <div class="flex gap-4">
-            <div
-              class="rounded-md border-black border-2 aspect-square flex align-middle items-center p-2"
-            >
-              Energy Balance
-            </div>
-            <div
-              class="rounded-md border-black border-2 aspect-square flex align-middle items-center p-2"
-            >
-              Gymsha.re
-            </div>
-          </div>
-        </section>
-        <section id="qualifications" class="mb-24">
-          <h2 class="lg:hidden">Qualifications</h2>
-          {% for q in site.data.qualifications %}
-          <div
-            class="flex border-2 border-transparent hover:border-slate-400 hover:bg-slate-400 hover:shadow-sm p-2 rounded-md mb-4"
-          >
-            <div class="w-32 text-sm uppercase pt-1">{{ q.period }}</div>
-            <div>
-              <h3>{{ q.name }}, {{ q.provider.name }}</h3>
-              <ul class="flex gap-2 flex-wrap">
-                {% for module in q.modules %}
-                <li
-                  class="rounded-full bg-slate-500 text-xs p-2 text-slate-100"
-                >
-                  {{ module }}
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          {% endfor %}
-        </section>
-        <section id="made-with-care" class="text-sm">
-          Designed on-the-fly with
-          <a
-            href="https://code.visualstudio.com/"
-            target="_blank"
-            class="text-blue-700 hover:text-blue-900"
-            >Visual Studio Code</a
-          >. Built with
-          <a
-            href="https://jekyllrb.com/"
-            target="_blank"
-            class="text-blue-700 hover:text-blue-900"
-            >Jekyll</a
-          >,
-          <a
-            href="https://tailwindcss.com/"
-            target="_blank"
-            class="text-blue-700 hover:text-blue-900"
-            >Tailwind CSS</a
-          >
-          and
-          <a
-            href="https://alpinejs.dev/"
-            class="text-blue-700 hover:text-blue-900"
-            target="_blank"
-            >Alpine.js</a
-          >. Deployed to
-          <a
-            href="https://pages.github.com/"
-            target="_blank"
-            class="text-blue-700 hover:text-blue-900"
-            >GitHub Pages</a
-          >
-          via
-          <a
-            href="https://github.com/features/actions"
-            target="_blank"
-            class="text-blue-700 hover:text-blue-900"
-            >GitHub Actions</a
-          >.
-        </section>
+        <!-- prettier-ignore -->
+        {% include about-me.html %}
+        {% include learning-focus.html %}
+        {% include professional-experience.html %}
+        {% include personal-projects.html %}
+        {% include qualifications.html %}
+        {% include made-with-care.html %}
       </main>
     </div>
   </div>

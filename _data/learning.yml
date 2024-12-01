@@ -2,68 +2,82 @@
   logo-filename: tailwindcss-logo.jpg
   url: https://tailwindcss.com/
   tag: frontend
+  reason: because it is a powerful evolution of styling and compliments React beautifully.
 
-- name: Alphine.js
+- name: Alpine.js
   logo-filename: alpinejs-logo.jpg
   url: https://alpinejs.dev/
   tag: frontend
+  reason: because I am curious, it seems like a lightweight addition for this profile site.
 
 - name: Jekyll
   logo-filename: jekyll-logo.png
   url: https://jekyllrb.com/
   tag: frameworks
+  reason: because I am curious and it is supported by GitHub Pages.
 
 - name: Next.js
   logo-filename: nextjs-logo.png
   url: https://nextjs.org/
   tag: frameworks
+  reason: because I am using this for personal projects.
 
 - name: React
   logo-filename: react-logo.jpeg
   url: https://react.dev/
   tag: frameworks
+  reason: because I am using this for personal projects.
 
 - name: tRPC
   logo-filename: trpc-logo.png
   url: https://trpc.io/
   tag: frameworks
+  reason: because I am using this for personal projects.
 
 - name: TypeScript
   logo-filename: typescript-logo.png
   url: https://www.typescriptlang.org/
   tag: languages
+  reason: because I am using this for personal projects.
 
 - name: Prisma
   logo-filename: prisma-io-logo.png
   url: https://www.prisma.io/
   tag: data
+  reason: because I am using this for personal projects.
 
 - name: SQLite
   logo-filename: sqlite-logo.png
   url: https://www.sqlite.org/
   tag: data
+  reason: because I am using this for personal projects.
 
 - name: Turso
   logo-filename: turso-tech-logo.png
   url: https://turso.tech/
   tag: data
+  reason: for production hosting of SQLite.
 
 - name: Vercel
   logo-filename: vercel-logo.jpeg
   url: https://vercel.com/
   tag: devops
+  reason: because I am curious about CI/CD deployment best practices and I really like the convenience!
 
 - name: GitHub Workflows and Actions
   logo-filename: github-logo.png
   url: https://github.com/features/actions
   tag: devops
+  reason: in my current contracts to transform how they deploy their code.
 
 - name: Docker
   logo-filename: docker-logo.png
   url: https://www.docker.com/
   tag: devops
+  reason: because my current contract relies on it for infrastructure management.
 
 - name: Ansible
   logo-filename: ansible-logo.jpg
   url: https://www.ansible.com/
   tag: devops
+  reason: because my current contract relies on it for infrastructure management.

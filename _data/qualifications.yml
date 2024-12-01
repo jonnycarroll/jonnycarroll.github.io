@@ -1,6 +1,7 @@
 - name: BSc Computer Science (Hons)
   provider:
     name: University of Edinburgh
+    url: https://www.ed.ac.uk/
   period: 2001 - 2005
   modules:
     - Algorithms & Data Structures

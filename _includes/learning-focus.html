@@ -1,0 +1,36 @@
+<section id="learning-focus" class="mb-24" x-data="{ activeTag: 'all' }">
+  <h2 class="uppercase font-bold text-black dark:text-white mb-4 lg:hidden">
+    Learning focus
+  </h2>
+  <p class="mb-2">
+    Out of professional necessity or personal curiosity I am currently, or have
+    recently been, diving into the following tech:
+  </p>
+  <ul class="flex gap-1 mb-4">
+    <template
+      x-for="filter in ['all', 'data', 'devops', 'frontend', 'frameworks', 'languages']"
+    >
+      <li>
+        <button
+          x-bind:class="activeTag === filter ? 'bg-slate-200 dark:bg-slate-800 text-black dark:text-white' : 'bg-slate-300 dark:bg-slate-900'"
+          x-text="filter"
+          @click="activeTag = filter"
+          class="py-1 px-2 rounded-md hover:bg-slate-400 dark:hover:bg-slate-700 text-sm transition-all"
+        ></button>
+      </li>
+    </template>
+  </ul>
+  <ul class="flex gap-2 flex-wrap">
+    {% for learning in site.data.learning %}
+    <li x-show="activeTag === 'all' || activeTag === '{{ learning.tag }}'">
+      <a
+        href="{{ learning.url }}"
+        target="_blank"
+        title="I am using {{ learning.name }} {{ learning.reason }}"
+        style="background-image: url('/assets/tech-logos/{{ learning.logo-filename }}')"
+        class="block rounded-md border-slate-400 hover:border-blue-700 bg-origin-padding border-2 h-16 aspect-square bg-center bg-cover bg-white"
+      ></a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
