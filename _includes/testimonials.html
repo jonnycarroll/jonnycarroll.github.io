@@ -116,14 +116,16 @@
               </p>
               <div class="block flex-shrink-0">
                 <div class="flex items-center">
-                  <div>
+                  {% if t.avatar %}
+                  <div class="mr-3">
                     <img
                       class="inline-block h-9 w-9 rounded-full object-cover object-center"
                       src="{{ t.avatar }}"
                       alt=""
                     />
                   </div>
-                  <div class="ml-3">
+                  {% endif %}
+                  <div>
                     <p
                       class="text-sm font-medium text-slate-700 dark:text-slate-300"
                     >
