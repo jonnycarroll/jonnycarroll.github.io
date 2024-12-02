@@ -2,9 +2,15 @@
   company:
     name: Lyles Sutherland
     url: https://www.smeprofessional.co.uk
-  period: 2024 - present
+  period: 2024 - Present
   period-label: 10 months
-  description: text
+  description: >
+    **Contract role, extended twice.** Delivered nine rounds of UI updates in fast,
+    agile iterations. Coaching numerous employees, with emphasis on engineering
+    managers given prior experience. Implemented three phases of CI/CD pipelines
+    involving diving-deep into unowned legacy tech debt. Advising on tech leads
+    on strategy and best practices given prior experience in large-scale
+    companies.
   technologies:
     - PHP
     - Sass
@@ -13,7 +19,7 @@
     - Ansible
     - Bash
     - Symfony
-    - Doctrine
+    - jQuery
 
 - role: Senior Engineering Manager
   past-roles:
@@ -23,26 +29,38 @@
     url: https://spotify.com
   period: 2021 - 2024
   period-label: 3 years
-  description: text
+  description: >
+    **Promoted.** Led delivery of royalties management web portal. Stood
+    up several new teams and worked with peer to re-organise. Trail-blazed
+    platform engineering practices within Financial Engeering. Presented to 600
+    attendees at Finance Conference in Barcelona.
   technologies:
+    - Backstage
     - GCP
-    - Coda
-    - Contentful
+    - PostgreSQL
     - Data Studio
     - Jira
-    - Jira Align
+    - Coda
+    - Contentful
+    - Agile
+    - Scrum
+    - Kanban
 
 - role: Senior Engineering Manager
   past-roles:
+    - Engineering Manager II
     - Engineering Manager
   company:
     name: NatWest
     url: https://natwest.com
   period: 2012 - 2020
   period-label: 8 years
-  description: text
+  description: >
+    **Multi-award winner. Promoted twice.** Led technical teams of
+    various sizes up to 25 people. Owned the technical planning and delivery of
+    strategic employee performance management web portal for ~15,000 employees.
   technologies:
-    - Tableau
+    - Mural
     - Jira
     - Pivotal Cloud
     - Coaching
@@ -57,10 +75,18 @@
     url: https://natwest.com
   period: 2007 - 2012
   period-label: 5 years
-  description: text
+  description: >
+    **Promoted.** Built a range of internal web applications used by
+    ~15,000 employees. Worked with Egnineering, Product Managers and business
+    partners to deliver timely iterations. Designed, scoped, implemented and
+    supported through full lifecycle.
   technologies:
-    - .Net
     - jQuery
+    - .Net
+    - MVC
+    - Spring.Net
+    - nHibernate
+    - Entity Framework
     - Oracle
 
 - role: Freelance Web Developer
@@ -69,7 +95,9 @@
     url: #
   period: 2003 - 2007
   period-label: 4 years
-  description: text
+  description: >
+    Worked with numerous web design agencies in Edinburgh. Delivered a range of
+    services, from site maintenance to building complete websites.
   technologies:
     - PHP
     - Smarty

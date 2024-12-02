@@ -22,7 +22,9 @@
   </ul>
   <ul class="flex gap-2 flex-wrap">
     {% for learning in site.data.learning %}
-    <li x-show="activeTag === 'all' || activeTag === '{{ learning.tag }}'">
+    <li
+      x-bind:class="(activeTag === 'all' || activeTag === '{{ learning.tag }}') ? 'animate-fade-in' : 'animate-fade-out'"
+    >
       <a
         href="{{ learning.url }}"
         target="_blank"

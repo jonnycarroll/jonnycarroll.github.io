@@ -10,9 +10,11 @@
     <a href="{{ q.provider.url }}" target="_blank" class="sm:col-span-3 block">
       <h3>{{ q.name }}</h3>
       <h3 class="mb-4">{{ q.provider.name }}</h3>
-      <ul class="flex gap-1 flex-wrap">
+      <ul class="flex gap-1 flex-wrap" title="Modules completed">
         {% for module in q.modules %}
-        <li class="p-2 rounded-full bg-slate-500 text-xs text-slate-100">
+        <li
+          class="p-2 rounded-full text-xs bg-black/10 text-slate-900 dark:bg-white/10 dark:text-slate-100"
+        >
           {{ module }}
         </li>
         {% endfor %}

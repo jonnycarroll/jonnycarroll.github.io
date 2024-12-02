@@ -17,20 +17,7 @@
   }
 }
 
-// body {
-// 	background: linear-gradient(-45deg, #ade2c4, #f295b9, #7dd0ee, #8cf0d8);
-// 	background-size: 400% 400%;
-// 	animation: gradient 15s ease infinite;
-// }
-
-// @keyframes gradient {
-// 	0% {
-// 		background-position: 0% 50%;
-// 	}
-// 	50% {
-// 		background-position: 100% 50%;
-// 	}
-// 	100% {
-// 		background-position: 0% 50%;
-// 	}
-// }
+@import "_animate-show-hide";
+@import "_shooting-stars";
+@import "_heartbeat";
+@import "_flash";

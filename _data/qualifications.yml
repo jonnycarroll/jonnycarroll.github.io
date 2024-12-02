@@ -8,3 +8,17 @@
     - Database Systems
     - Computer Graphics
     - Networks
+
+- name: Backend refresher courses
+  provider:
+    name: Boot.Dev
+    url: https://www.boot.dev/
+  period: Jan 2024
+  modules:
+    - Go
+    - Docker
+    - Kubernetes
+    - Python
+    - HTTP
+    - JavaScript
+    - Algorithms
