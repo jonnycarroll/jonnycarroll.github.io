@@ -50,16 +50,23 @@
     }"
 >
   <div
-    class="flex flex-col w-full items-end"
+    class="flex flex-col w-full"
     aria-labelledby="carousel-label"
     role="region"
     tabindex="0"
     x-on:keydown.left="prev"
     x-on:keydown.right="next"
   >
-    <h2 class="sr-only" hidden="" id="carousel-label">Carousel</h2>
-    <span class="sr-only" hidden="" id="carousel-content-label">Carousel</span>
-    <div class="inline-flex items-center lg:px-2 space-x-2 mb-2">
+    <span class="sr-only" hidden="" id="carousel-content-label"
+      >Testimonials slide show</span
+    >
+    <div class="flex items-center justify-end lg:px-2 space-x-2 mb-2">
+      <h2
+        class="grow uppercase font-bold text-black dark:text-white lg:hidden"
+        id="carousel-label"
+      >
+        Testimonials
+      </h2>
       <button
         class="flex items-center text-white/60 hover:text-white/90 transition-colors"
         :class="{ 'opacity-50 ': atBeginning }"
