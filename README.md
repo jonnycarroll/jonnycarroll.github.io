@@ -1,3 +1,5 @@
+Source code for [jonnycarroll.dev](https://jonnycarroll.dev).
+
 # About this repo
 
 > Imitation is the highest form of flattery.
@@ -11,6 +13,8 @@ Getting Jekyll and Tailwind to play together took a little bit of searching and 
 Add in Alpine.js and overall you have a very quick and easy way to build ann interactive static website.
 
 # Running the site locally
+
+Before you go any further, [install Jekyll](https://jekyllrb.com/docs/installation/) to your preferred development environment. Personally, I use Ubuntu within WSL.
 
 For local development, use the following script:
 
