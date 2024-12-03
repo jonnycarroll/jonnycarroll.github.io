@@ -8,7 +8,7 @@ However, I would like to give a big shout out to [Brittany Chiang](https://britt
 I am happy to pay it forward. If you would like to fork this site **please go ahead, but with attribution to [jonnycarroll.dev](https://jonnycarroll.dev)**.
 
 Getting Jekyll and Tailwind to play together took a little bit of searching and tinkering but overall, the combination is super easy to work with.
-Add in Alpine.js and overall you have a very quick and easy way to build a static website.
+Add in Alpine.js and overall you have a very quick and easy way to build ann interactive static website.
 
 # Running the site locally
 
