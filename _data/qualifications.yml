@@ -9,7 +9,7 @@
     - Computer Graphics
     - Networks
 
-- name: Backend refresher courses
+- name: Fullstack refresher courses
   provider:
     name: Boot.Dev
     url: https://www.boot.dev/
