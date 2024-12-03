@@ -34,6 +34,7 @@ x-bind:class="darkMode ? 'dark' : '' ">
       type="button"
       title="Toggle light mode"
       class="px-2 py-1 rounded-md hover:bg-slate-300 dark:hover:bg-slate-800"
+      x-bind:class="localStorage.theme === 'light' ? 'text-slate-950' : ''"
       @click="() => {
         localStorage.theme = 'light';
         darkMode = false;
@@ -44,6 +45,7 @@ x-bind:class="darkMode ? 'dark' : '' ">
       type="button"
       title="Toggle dark mode"
       class="px-2 py-1 rounded-md hover:bg-slate-300 dark:hover:bg-slate-800"
+      x-bind:class="localStorage.theme === 'dark' ? 'text-slate-50' : ''"
       @click="() => {
         localStorage.theme = 'dark';
         darkMode = true;
@@ -54,6 +56,7 @@ x-bind:class="darkMode ? 'dark' : '' ">
       type="button"
       title="Toggle dark mode system preference"
       class="px-2 py-1 rounded-md hover:bg-slate-300 dark:hover:bg-slate-800"
+      x-bind:class="localStorage.hasOwnProperty('theme') ? 'text-slate-50 dark:text-slate-950' : ''"
       @click="() => {
         localStorage.removeItem('theme');
         darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -92,14 +95,73 @@ x-bind:class="darkMode ? 'dark' : '' ">
           >.
         </div>
         <ul class="hidden lg:block">
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#learning-focus">Learning focus</a></li>
           <li>
-            <a href="#professional-experience">Professional experience</a>
+            <a
+              href="#about-me"
+              class="group dark:hover:text-slate-50 transition-all"
+              >About me
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
           </li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#qualifications">Qualifications</a></li>
+          <li>
+            <a
+              href="#learning-focus"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Learning focus
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#professional-experience"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Professional experience
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#testimonials"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Testimonials
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Projects
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#qualifications"
+              class="group dark:hover:text-slate-50 transition-all"
+              >Qualifications
+              <span
+                class="inline-block ml-1 transition-transform group-hover:translate-x-1"
+              >
+                <i class="fa-solid fa-arrow-right fa-xs"></i
+              ></span>
+            </a>
+          </li>
         </ul>
         <ul class="flex gap-6 lg:absolute lg:inset-x-0 lg:bottom-16">
           {% for social in site.data.social-links %}
@@ -121,62 +183,10 @@ x-bind:class="darkMode ? 'dark' : '' ">
         {% include learning-focus.html %}
         {% include professional-experience.html %}
         {% include testimonials.html %}
-        {% include personal-projects.html %}
         {% include qualifications.html %}
         {% include made-with-care.html %}
       </main>
     </div>
   </div>
-  <div class="stars">
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-    <div class="star"><div class="hover"></div></div>
-  </div>
+  {% include shooting-stars.html %}
 </body>

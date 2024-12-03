@@ -23,7 +23,9 @@
   <ul class="flex gap-2 flex-wrap">
     {% for learning in site.data.learning %}
     <li
-      x-bind:class="(activeTag === 'all' || activeTag === '{{ learning.tag }}') ? 'animate-fade-in' : 'animate-fade-out'"
+      style="transition-behavior: allow-discrete"
+      class="transition-all"
+      x-bind:class="(activeTag === 'all' || activeTag === '{{ learning.tag }}') ? 'opacity-100 block' : 'opacity-0 hidden'"
     >
       <a
         href="{{ learning.url }}"

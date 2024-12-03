@@ -4,7 +4,7 @@
   </h2>
   {% for job in site.data.professional-experience %}
   <div
-    class="grid grid-cols-1 sm:grid-cols-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md mb-4 transition-all"
+    class="relative grid grid-cols-1 sm:grid-cols-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md mb-4 transition-all"
   >
     <div class="text-sm pb-1 sm:pt-1 sm:pb-0">
       {{ job.period }}
@@ -12,8 +12,20 @@
         {{ job.period-label }}
       </div>
     </div>
-    <a href="{{ job.company.url }}" target="_blank" class="sm:col-span-3 block">
-      <h3>{{ job.role }}, {{ job.company.name }}</h3>
+    <a
+      href="{{ job.company.url }}"
+      target="_blank"
+      class="group relative sm:col-span-3 block"
+    >
+      <span
+        class="absolute top-0 right-1 transition-all group-hover:text-slate-950 dark:group-hover:text-slate-50 group-hover:-translate-y-1 group-hover:translate-x-1"
+        ><i class="fa-solid fa-square-arrow-up-right"></i
+      ></span>
+      <h3
+        class="transition-colors group-hover:text-slate-950 dark:group-hover:text-slate-50"
+      >
+        {{ job.role }}, {{ job.company.name }}
+      </h3>
       {% for past-role in job.past-roles %}
       <h3 class="text-slate-500">{{ past-role }}</h3>
       {% endfor %}
