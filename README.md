@@ -7,7 +7,8 @@ Source code for [jonnycarroll.dev](https://jonnycarroll.dev).
 This site was built entirely by my hands, from scratch, using a combination of Jekyll, Tailwind and Alpine.js.
 However, I would like to give a big shout out to [Brittany Chiang](https://brittanychiang.com/) for much inspiration.
 
-I am happy to pay it forward. If you would like to fork this site **please go ahead, but with attribution to [jonnycarroll.dev](https://jonnycarroll.dev)**.
+I am happy to pay it forward. If you would like to fork this site
+**please go ahead, but you must have attribution to [jonnycarroll.dev](https://jonnycarroll.dev) visible on your site**.
 
 Getting Jekyll and Tailwind to play together took a little bit of searching and tinkering but overall, the combination is super easy to work with.
 Add in Alpine.js and overall you have a very quick and easy way to build ann interactive static website.
