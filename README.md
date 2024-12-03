@@ -14,9 +14,15 @@ Add in Alpine.js and overall you have a very quick and easy way to build ann int
 
 # Running the site locally
 
-Before you go any further, [install Jekyll](https://jekyllrb.com/docs/installation/) to your preferred development environment. Personally, I use Ubuntu within WSL.
+## Pre-requisites
 
-For local development, use the following script:
+Before you go any further:
+1. [Install Jekyll](https://jekyllrb.com/docs/installation/)
+2. [Install Node](https://nodejs.org/en/download/package-manager)
+
+## Getting start with development
+
+For local development, use the following script to view your site:
 
 ```shell
 ./run-dev.sh
