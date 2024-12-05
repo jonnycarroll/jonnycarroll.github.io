@@ -1,6 +1,8 @@
-Source code for [jonnycarroll.dev](https://jonnycarroll.dev).
+![image](https://github.com/user-attachments/assets/c914c238-6a44-4548-89f5-5e70cb804ef7)
 
 # About this repo
+
+The repo is the source code for [jonnycarroll.dev](https://jonnycarroll.dev).
 
 > Imitation is the highest form of flattery.
 
