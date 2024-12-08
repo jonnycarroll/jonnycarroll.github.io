@@ -80,18 +80,13 @@
   &::after {
     transform: rotate(-45deg);
   }
-}
 
-.star:has(.hover:hover) {
+  transition: 2s all;
+}
+.hover {
   color: #fff;
   opacity: 1 !important;
-}
-.star .hover {
-  top: -30px;
-  left: -30px;
-  height: 60px;
-  width: 60px;
-  z-index: 1;
+  transition: 0.2s all;
 }
 
 @keyframes fall {

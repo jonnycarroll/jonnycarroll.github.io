@@ -15,6 +15,10 @@ x-bind:class="darkMode ? 'dark' : '' ">
   ></script>
   <script
     defer
+    src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"
+  ></script>
+  <script
+    defer
     src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
   ></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,6 +27,34 @@ x-bind:class="darkMode ? 'dark' : '' ">
     href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"
   />
+  <script type="text/javascript">
+    window.onload = function () {
+      var mouseX = 0;
+      var mouseY = 0;
+      const mouseRect = 50;
+      document.onmousemove = (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      };
+      const shootingStars = document.getElementsByClassName("star");
+      setInterval(() => {
+        for (let i = 0; i < shootingStars.length; i++) {
+          const elem = shootingStars[i];
+          const rect = elem.getBoundingClientRect();
+          if (
+            rect.x >= mouseX - mouseRect &&
+            rect.x <= mouseX + mouseRect &&
+            rect.y >= mouseY - mouseRect &&
+            rect.y <= mouseY + mouseRect
+          ) {
+            elem.classList.add("hover");
+          } else {
+            elem.classList.remove("hover");
+          }
+        }
+      }, 100);
+    };
+  </script>
 </head>
 <body
   class="relative bg-slate-300 dark:bg-slate-900 text-lg text-slate-800 dark:text-slate-300 antialiased font-display"
