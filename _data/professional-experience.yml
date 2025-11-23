@@ -1,8 +1,25 @@
+- role: Engineering Manager
+  company:
+    name: Skyscanner
+    url: https://www.skyscanner.co.uk
+  period: 2025 - Present
+  period-label: 7 months
+  description: >
+    UX Platform lead, leading the squad who deliver homepage and flights experiences
+    to over 100m users every month. Increasing company velocity by leading implementation
+    of company-wide web monorepo.
+  technologies:
+    - React
+    - Nx
+    - AWS
+    - GitHub Actions
+    - New Relic
+
 - role: Tech Lead, Frontend & DevOps
   company:
     name: Lyles Sutherland
     url: https://www.smeprofessional.co.uk
-  period: 2024 - Present
+  period: 2024 - 2025
   period-label: 10 months
   description: >
     **Contract role, extended twice.** Delivered nine rounds of UI updates in fast,
