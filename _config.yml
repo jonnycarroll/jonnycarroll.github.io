@@ -21,7 +21,7 @@
 title: Jonny Carroll
 email: jobs@jonnycarroll.dev
 description: >- # this means to ignore newlines until "baseurl:"
-  Portfolio and online resume for Jonny Carroll, staff software engineer
+  Portfolio and online resume for Jonny Carroll, senior engineering manager
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: jonnycarroll.dev
 url: "https://jonnycarroll.dev" # the base hostname & protocol for your site, e.g. http://example.com
