@@ -1,13 +1,13 @@
-- role: Engineering Manager
+- role: Senior Engineering Manager
   company:
     name: Skyscanner
     url: https://www.skyscanner.co.uk
   period: 2025 - Present
   period-label: Ongoing
   description: >
-    UX Platform; leading the squad who deliver homepage and flights experiences
+    UX Platform; leading squads who deliver homepage and flights experiences
     to over 100m users every month. Increasing company velocity by leading implementation
-    of company-wide web monorepo.
+    of company-wide web monorepo and ai-native design system.
   technologies:
     - React
     - Nx
