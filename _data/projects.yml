@@ -1,11 +1,12 @@
 - title: Cosmic Pantry
-  description: .
-  thumbnail: /assets/projects/cosmic-pantry.svg
-  url: https://cosmicpantry.jonncarroll.dev
+  description: |
+    Save the receipes you love to cook, import new ideas from the web, and step through dinner prep with ease.
+  thumbnail: /assets/projects/cosmic-pantry.png
+  url: https://cosmicpantry.jonnycarroll.dev
 
 - title: Exercise My Demons
-  description: super simple exercise database search and satirical blog about a middle-aged demon.
-  thumbnail: /assets/projects/energy-balance.svg
+  description: Simple exercise database search and satirical blog about a middle-aged demon.
+  thumbnail: /assets/projects/exercise-my-demons-logo-v2-1.webp
   url: https://exercise-my-demons.com
 
 # - title: Energy Balance
