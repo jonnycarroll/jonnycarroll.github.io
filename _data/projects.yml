@@ -1,0 +1,17 @@
+- title: Cosmic Pantry
+  description: .
+  thumbnail: /assets/projects/cosmic-pantry.svg
+  url: https://cosmicpantry.jonncarroll.dev
+
+- title: Exercise My Demons
+  description: super simple exercise database search and satirical blog about a middle-aged demon.
+  thumbnail: /assets/projects/energy-balance.svg
+  url: https://exercise-my-demons.com
+
+# - title: Energy Balance
+#   description: A personal product exploring health tracking, habit design, and calm, focused user flows.
+#   thumbnail: /assets/projects/energy-balance.svg
+
+# - title: Gymsha.re
+#   description: A side project experimenting with social sharing patterns for gym sessions and fitness progress.
+#   thumbnail: /assets/projects/gymshare.svg

@@ -1,0 +1,29 @@
+<section id="projects" class="mb-24">
+  <h2 class="uppercase font-bold text-black dark:text-white mb-4 lg:hidden">
+    Projects
+  </h2>
+  <div class="space-y-4">
+    {% for project in site.data.projects %}
+    <article
+      class="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)] gap-4 hover:bg-white/30 dark:hover:bg-black/30 hover:shadow-sm p-4 rounded-md transition-all"
+    >
+      <div class="overflow-hidden rounded-md bg-slate-200 dark:bg-slate-800 aspect-[4/3]">
+        <img
+          src="{{ project.thumbnail | relative_url }}"
+          alt="{{ project.title }} thumbnail"
+          class="size-full object-cover"
+          loading="lazy"
+        />
+      </div>
+      <div class="min-w-0">
+        <h3 class="text-slate-950 dark:text-slate-50 mb-2">
+          {{ project.title }}
+        </h3>
+        <p class="text-sm text-slate-600 dark:text-slate-400">
+          {{ project.description }}
+        </p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
