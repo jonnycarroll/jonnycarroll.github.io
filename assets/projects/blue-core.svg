@@ -1,16 +1,44 @@
 <svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="640" height="480" rx="24" fill="#06111F"/>
   <rect x="32" y="32" width="576" height="416" rx="18" fill="#0A1930"/>
-  <path d="M96 96H544V384H96V96Z" fill="#101B34"/>
-  <path d="M96 144H544M96 208H544M96 272H544M96 336H544M160 96V384M224 96V384M288 96V384M352 96V384M416 96V384M480 96V384" stroke="#1F3B63" stroke-width="4"/>
-  <circle cx="320" cy="240" r="86" fill="#38BDF8" fill-opacity="0.16"/>
-  <circle cx="320" cy="240" r="54" fill="#0EA5E9"/>
-  <circle cx="320" cy="240" r="25" fill="#E0F2FE"/>
-  <path d="M320 100L338 158H302L320 100Z" fill="#F97316"/>
-  <path d="M320 380L302 322H338L320 380Z" fill="#F97316"/>
-  <path d="M180 240L238 222V258L180 240Z" fill="#F97316"/>
-  <path d="M460 240L402 258V222L460 240Z" fill="#F97316"/>
-  <path d="M158 136L184 162M482 136L456 162M158 344L184 318M482 344L456 318" stroke="#A3E635" stroke-width="10" stroke-linecap="round"/>
-  <text x="56" y="412" fill="#F8FAFC" font-family="Raleway, Arial, sans-serif" font-size="54" font-weight="700">Blue Core</text>
-  <text x="58" y="442" fill="#BAE6FD" font-family="Encode Sans, Arial, sans-serif" font-size="22">Arcade pressure, cold neon heart</text>
+  <ellipse cx="322" cy="350" rx="226" ry="56" fill="#03101E" fill-opacity="0.72"/>
+
+  <path d="M320 86L556 220L320 354L84 220L320 86Z" fill="#12223B"/>
+  <path d="M84 220L320 354V402L84 268V220Z" fill="#0B1628"/>
+  <path d="M556 220L320 354V402L556 268V220Z" fill="#081221"/>
+  <path d="M320 86L556 220L320 354L84 220L320 86Z" stroke="#27507A" stroke-width="5" stroke-linejoin="round"/>
+
+  <path d="M172 220L320 136L468 220L320 304L172 220Z" fill="#0F2C4E" stroke="#2B6D9A" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M242 220L320 176L398 220L320 264L242 220Z" fill="#123C64" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="3"/>
+
+  <path d="M162 176L206 151L250 176L206 201L162 176Z" fill="#182F46" stroke="#35617D" stroke-width="3"/>
+  <path d="M390 176L434 151L478 176L434 201L390 176Z" fill="#182F46" stroke="#35617D" stroke-width="3"/>
+  <path d="M162 264L206 239L250 264L206 289L162 264Z" fill="#182F46" stroke="#35617D" stroke-width="3"/>
+  <path d="M390 264L434 239L478 264L434 289L390 264Z" fill="#182F46" stroke="#35617D" stroke-width="3"/>
+
+  <path d="M206 176L280 218" stroke="#F97316" stroke-width="10" stroke-linecap="round"/>
+  <path d="M434 176L360 218" stroke="#F97316" stroke-width="10" stroke-linecap="round"/>
+  <path d="M206 264L280 222" stroke="#A3E635" stroke-width="10" stroke-linecap="round"/>
+  <path d="M434 264L360 222" stroke="#A3E635" stroke-width="10" stroke-linecap="round"/>
+  <path d="M225 187L247 199M411 187L389 199M225 253L247 241M411 253L389 241" stroke="#F8FAFC" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M288 220L320 202L352 220L320 238L288 220Z" fill="#BAE6FD"/>
+  <path d="M288 220L320 238V284L288 266V220Z" fill="#0284C7"/>
+  <path d="M352 220L320 238V284L352 266V220Z" fill="#0369A1"/>
+  <ellipse cx="320" cy="210" rx="66" ry="30" fill="#38BDF8" fill-opacity="0.22"/>
+  <circle cx="320" cy="202" r="42" fill="#0EA5E9"/>
+  <circle cx="320" cy="202" r="22" fill="#E0F2FE"/>
+  <circle cx="320" cy="202" r="74" stroke="#38BDF8" stroke-opacity="0.25" stroke-width="12"/>
+
+  <path d="M193 143L206 116L219 143L206 170L193 143Z" fill="#84CC16"/>
+  <path d="M421 143L434 116L447 143L434 170L421 143Z" fill="#84CC16"/>
+  <path d="M193 297L206 270L219 297L206 324L193 297Z" fill="#FB923C"/>
+  <path d="M421 297L434 270L447 297L434 324L421 297Z" fill="#FB923C"/>
+
+  <path d="M120 220L320 106L520 220L320 334L120 220Z" stroke="#3B82F6" stroke-opacity="0.18" stroke-width="3"/>
+  <path d="M164 220L320 132L476 220L320 308L164 220Z" stroke="#E0F2FE" stroke-opacity="0.12" stroke-width="2"/>
+  <circle cx="126" cy="138" r="4" fill="#BAE6FD" fill-opacity="0.8"/>
+  <circle cx="505" cy="118" r="3" fill="#BAE6FD" fill-opacity="0.55"/>
+  <circle cx="540" cy="336" r="4" fill="#BAE6FD" fill-opacity="0.65"/>
+  <circle cx="98" cy="332" r="3" fill="#BAE6FD" fill-opacity="0.45"/>
 </svg>
