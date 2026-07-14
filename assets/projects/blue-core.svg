@@ -1,0 +1,16 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="480" rx="24" fill="#06111F"/>
+  <rect x="32" y="32" width="576" height="416" rx="18" fill="#0A1930"/>
+  <path d="M96 96H544V384H96V96Z" fill="#101B34"/>
+  <path d="M96 144H544M96 208H544M96 272H544M96 336H544M160 96V384M224 96V384M288 96V384M352 96V384M416 96V384M480 96V384" stroke="#1F3B63" stroke-width="4"/>
+  <circle cx="320" cy="240" r="86" fill="#38BDF8" fill-opacity="0.16"/>
+  <circle cx="320" cy="240" r="54" fill="#0EA5E9"/>
+  <circle cx="320" cy="240" r="25" fill="#E0F2FE"/>
+  <path d="M320 100L338 158H302L320 100Z" fill="#F97316"/>
+  <path d="M320 380L302 322H338L320 380Z" fill="#F97316"/>
+  <path d="M180 240L238 222V258L180 240Z" fill="#F97316"/>
+  <path d="M460 240L402 258V222L460 240Z" fill="#F97316"/>
+  <path d="M158 136L184 162M482 136L456 162M158 344L184 318M482 344L456 318" stroke="#A3E635" stroke-width="10" stroke-linecap="round"/>
+  <text x="56" y="412" fill="#F8FAFC" font-family="Raleway, Arial, sans-serif" font-size="54" font-weight="700">Blue Core</text>
+  <text x="58" y="442" fill="#BAE6FD" font-family="Encode Sans, Arial, sans-serif" font-size="22">Arcade pressure, cold neon heart</text>
+</svg>

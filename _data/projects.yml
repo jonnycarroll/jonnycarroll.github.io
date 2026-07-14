@@ -1,3 +1,8 @@
+- title: Blue Core
+  description: A tiny arcade pressure-cooker: dodge the chaos, guard the glow, and keep the core alive.
+  thumbnail: /assets/projects/blue-core.svg
+  url: https://bluegore.games.jonnycarroll.dev
+
 - title: Cosmic Pantry
   description: |
     Save the receipes you love to cook, import new ideas from the web, and step through dinner prep with ease.
