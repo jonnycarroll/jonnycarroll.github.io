@@ -146,6 +146,7 @@ x-bind:class="darkMode ? 'dark' : '' ">
                 <i class="fa-solid fa-arrow-right fa-xs"></i></span
             ></a>
           </li>
+          {% if site.show_learning_focus %}
           <li>
             <a
               href="#learning-focus"
@@ -157,6 +158,7 @@ x-bind:class="darkMode ? 'dark' : '' ">
                 <i class="fa-solid fa-arrow-right fa-xs"></i></span
             ></a>
           </li>
+          {% endif %}
           <li>
             <a
               href="#professional-experience"
@@ -210,7 +212,9 @@ x-bind:class="darkMode ? 'dark' : '' ">
         <!-- prettier-ignore -->
         {% include about-me.html %}
         {% include projects.html %}
+        {% if site.show_learning_focus %}
         {% include learning-focus.html %}
+        {% endif %}
         {% include professional-experience.html %}
         {% include testimonials.html %}
         {% include qualifications.html %}
