@@ -21,6 +21,7 @@ x-bind:class="darkMode ? 'dark' : '' ">
     defer
     src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
   ></script>
+  <script defer src="{{ '/assets/js/section-navigation.js' | relative_url }}"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -123,7 +124,7 @@ x-bind:class="darkMode ? 'dark' : '' ">
             >perform</strong
           >.
         </div>
-        <ul class="hidden lg:block">
+        <ul id="section-navigation" class="hidden lg:block">
           <li>
             <a
               href="#about-me"

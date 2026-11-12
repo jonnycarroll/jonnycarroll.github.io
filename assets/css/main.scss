@@ -5,6 +5,19 @@
 @import "tailwindcss/components.css";
 @import "tailwindcss/utilities.css";
 
+#section-navigation a[aria-current="location"] {
+  color: #020617;
+  font-weight: 700;
+}
+
+.dark #section-navigation a[aria-current="location"] {
+  color: #f8fafc;
+}
+
+#section-navigation a[aria-current="location"] span {
+  transform: translateX(0.25rem);
+}
+
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
